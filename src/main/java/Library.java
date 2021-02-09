@@ -33,5 +33,9 @@ public class Library {
 
     }
 
+    public void removeBook(Book book){
+        this.collection.remove(book);
+    }
+
 
 }

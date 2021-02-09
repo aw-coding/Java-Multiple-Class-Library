@@ -13,4 +13,13 @@ public class Borrower {
     public String getName() {
         return this.name;
     }
+
+    public int getCollectionSize() {
+        return this.collection.size();
+    }
+
+    public void borrowBook(Library library, Book book) {
+        library.removeBook(book);
+        this.collection.add(book);
+    }
 }

@@ -39,6 +39,14 @@ public class LibraryTest {
 
     }
 
+    @Test
+    public void canRemoveBook(){
+        library.addBook(carrie);
+        library.removeBook(carrie);
+        assertEquals(0, library.getCollectionSize());
+
+    }
+
 
 
 }
