@@ -19,7 +19,19 @@ public class Library {
         return this.collection.size();
     }
 
-    public void addBook(Book book) {
-        this.collection.add(book);
+    public boolean checkCapacity(){
+        if (this.getCollectionSize() < this.capacity) {
+            return true;
+        }
+        return false;
     }
+
+    public void addBook(Book book) {
+        if (this.checkCapacity() == true) {
+            this.collection.add(book);
+        }
+
+    }
+
+
 }

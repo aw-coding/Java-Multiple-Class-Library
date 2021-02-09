@@ -29,6 +29,15 @@ public class LibraryTest {
         library.addBook(carrie);
         assertEquals(1, library.getCollectionSize());
     }
+    @Test
+    public void checkCapacityCannotBeExceeded(){
+        library.addBook(carrie);
+        library.addBook(carrie);
+        library.addBook(carrie);
+        library.addBook(carrie);
+        assertEquals(3, library.getCollectionSize());
+
+    }
 
 
 
