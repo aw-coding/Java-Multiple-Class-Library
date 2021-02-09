@@ -24,6 +24,12 @@ public class LibraryTest {
         assertEquals(0, library.getCollectionSize());
     }
 
+    @Test
+    public void canAddToCollection(){
+        library.addBook(carrie);
+        assertEquals(1, library.getCollectionSize());
+    }
+
 
 
 }
