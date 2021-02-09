@@ -19,4 +19,11 @@ public class LibraryTest {
         assertEquals(3, library.getCapacity());
     }
 
+    @Test
+    public void checkCollectionSize(){
+        assertEquals(0, library.getCollectionSize());
+    }
+
+
+
 }

@@ -15,4 +15,7 @@ public class Library {
         return this.capacity;
     }
 
+    public int getCollectionSize() {
+        return this.collection.size();
+    }
 }
